@@ -1,0 +1,40 @@
+<!-- home.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vision Therapy - Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="nature-bg">
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="stereogram.html">Stereogram</a>
+    <a href="pencil.html">Pencil Push-up</a>
+    <a href="progress.html">Progress Tracker</a>
+    <a href="index.html">Logout</a>
+  </nav>
+
+  <main>
+<div class="welcome-card">
+  <h2>Welcome, <span id="userName">Guest</span>!</h2>
+  <p>Start your eye alignment and focus therapy below.</p>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const userName = localStorage.getItem("username") || "Guest";
+    document.getElementById("userName").textContent = userName;
+  });
+</script>
+  </main>
+
+  <footer>
+    <p>Contact: eyehealth@example.com | @VisionTherapy</p>
+    <small>This site is for educational purposes only.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

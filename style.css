@@ -1,0 +1,115 @@
+body, html {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #003366;
+  background-color: #e6f2ff;
+}
+
+.nature-bg {
+  background: linear-gradient(to bottom, #cce7ff, #ffffff);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+nav {
+  background: #b3d9ff;
+  padding: 10px;
+  text-align: center;
+}
+nav a {
+  margin: 0 10px;
+  color: #003366;
+  text-decoration: none;
+}
+
+.login-container, .welcome-card, .exercise {
+  background: white;
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.auth-form input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 90%;
+}
+
+.timer {
+  margin-top: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  margin: 20px auto;
+  max-width: 400px;
+}
+.grid div {
+  width: 40px;
+  height: 40px;
+  background: #cce7ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.grid .completed {
+  background: #66cc66;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9em;
+}
+
+.hidden {
+  display: none;
+}
+.instruction-list {
+  padding-left: 20px;
+  margin: 20px 0;
+}
+.instruction-list li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.tracker-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+  gap: 10px;
+  max-width: 400px;
+  margin: auto;
+}
+
+.day {
+  width: 40px;
+  height: 40px;
+  background-color: #e0f2f1;
+  border: 2px solid #81d4fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.day.completed {
+  background-color: #a5d6a7;
+  color: white;
+}

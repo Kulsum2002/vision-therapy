@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stereogram Exercise</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="stereogram.html" class="active">Stereogram</a>
+    <a href="pencil.html">Pencil Push-up</a>
+    <a href="progress.html">Progress Tracker</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <main class="exercise">
+    <h2>Stereogram Exercise</h2>
+    <img src="stereogram.jpg" alt="Stereogram Illusion" class="exercise-img"/ width="500" hight="600">
+    <ol class="instruction-list">
+      <li>Extend your arm and hold your device at eye level.</li>
+      <li>Hold a pen halfway between your eye and the device.</li>
+      <li>Focus on the tip of the pen.</li>
+      <li>Look for the illusion of a person with raised arms to appear.</li>
+      <li>Keep focusing to make the illusion remain.</li>
+    </ol>
+    <div class="timer">
+      <span id="time">03:00</span>
+      <button onclick="startTimer('stereo')">Start</button>
+      <button onclick="pauseTimer()">Pause</button>
+      <button onclick="resetTimer('stereo')">Reset</button>
+    </div>
+  </main>
+</body>
+</html>

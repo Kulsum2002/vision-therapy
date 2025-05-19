@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pencil Push-up</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="stereogram.html">Stereogram</a>
+    <a href="pencil.html" class="active">Pencil Push-up</a>
+    <a href="progress.html">Progress Tracker</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <main class="exercise">
+    <h2>Pencil Push-up Exercise</h2>
+    <img src="pencil_pushup.jpg" alt="Pencil Push-up Illustration" class="exercise-img"/ width="500" hight="600">
+    <ol class="instruction-list">
+      <li>Hold a pencil at arm's length at the level of eyes and concentrate on the tip of the pencil.</li>
+      <li>Slowly advance the tip towards your nose until you see a double image of the pencil.</li>
+      <li>Hold the tip at that position and focus your eyes on it as long as possible, then relax.</li>
+      <li>Repeat the above steps 10 times, morning and evening.</li>
+    </ol>
+    <div class="timer">
+      <span id="time">03:00</span>
+      <button onclick="startTimer('pencil')">Start</button>
+      <button onclick="pauseTimer()">Pause</button>
+      <button onclick="resetTimer('pencil')">Reset</button>
+    </div>
+  </main>
+</body>
+</html>
