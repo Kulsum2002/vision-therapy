@@ -24,6 +24,12 @@ document.addEventListener("DOMContentLoaded", function () {
   // ========== TIMER SETUP ==========
   updateTimerDisplay();
   setupProgressTracker(); // only runs if on progress page
+  const stereoImg = document.getElementById("stereogramImage");
+  if (stereoImg) {
+    stereoImg.addEventListener("click", function () {
+      this.classList.toggle("rotated");
+    });
+  }
 });
 
 let timerInterval;
