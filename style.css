@@ -21,6 +21,83 @@ nav a {
   color: #003366;
   text-decoration: none;
 }
+/* ===== Login Box Styling ===== */
+.login-container {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  background: #f0f8ff; /* AliceBlue - calming */
+  backdrop-filter: blur(8px);
+}
+
+/* Headings */
+.login-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Input Fields */
+.login-container input[type="text"],
+.login-container input[type="password"],
+.login-container input[type="email"] {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 18px;
+  border: 1px solid #aacfe4;
+  border-radius: 10px;
+  background-color: #ffffff;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-container input:focus {
+  border-color: #4285f4;
+  outline: none;
+  box-shadow: 0 0 5px rgba(66, 133, 244, 0.4);
+}
+
+/* Buttons */
+.login-container button,
+.login-container input[type="submit"] {
+  width: 100%;
+  padding: 14px;
+  background-color: #4da6ff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.login-container button:hover,
+.login-container input[type="submit"]:hover {
+  background-color: #3b8ad9;
+  transform: translateY(-1px);
+}
+
+.login-container .toggle-link {
+  display: block;
+  text-align: center;
+  margin-top: 12px;
+  color: #356bad;
+  font-size: 0.95rem;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+  .login-container {
+    margin: 20px;
+    padding: 20px;
+  }
+}
 
 .login-container, .welcome-card, .exercise {
   background: white;
