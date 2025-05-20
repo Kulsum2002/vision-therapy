@@ -68,6 +68,27 @@ footer {
   margin-top: 40px;
   font-size: 0.9em;
 }
+.stereogram-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+#stereogramImage {
+  max-width: 100%;
+  height: auto;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/* Rotated and enlarged version */
+#stereogramImage.rotated {
+  transform: rotate(90deg) scale(1.8);
+  z-index: 1000;
+  position: relative;
+}
 
 .hidden {
   display: none;
